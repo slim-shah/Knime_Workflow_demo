@@ -1,0 +1,2 @@
+org.sqlite.JDBC
+org.apache.hive.jdbc.HiveDriver

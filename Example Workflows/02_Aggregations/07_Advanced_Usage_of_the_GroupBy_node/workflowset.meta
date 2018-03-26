@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">Ferry</met:element>
+  <met:element form="date" name="Creation Date">19/3/2016/10:32:15 +02:00</met:element>
+  <met:element form="multiline" name="Comments">GroupBy Advanced Examples
+
+This workflow shows the many aggregation options that the GroupBy node offers.
+We start from customer data, group on Gender or more features, and run a few different aggregation methods on a few different features. Here we demonstrate grouping on multiple features, pattern based grouping and aggregation without grouping for calculating statistics.</met:element>
+  <met:element form="text" name="Last Uploaded" read-only="true">2016-08-19 10:36:37 +0000</met:element>
+  <met:element form="text" name="Last Edited" read-only="true">2016-06-20 15:48:42 +0200</met:element>
+</met:KNIMEMetaInfo>

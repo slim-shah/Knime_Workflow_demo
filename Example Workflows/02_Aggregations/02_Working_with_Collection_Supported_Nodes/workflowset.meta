@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">koetter</met:element>
+  <met:element form="date" name="Creation Date">18/10/2014/17:29:17 +01:00</met:element>
+  <met:element form="multiline" name="Comments">Working With Collections - Supported nodes
+
+The goal of the workflow is to demonstrate the creation and working with collection cells. It is divided into three parts.
+The last section "Working with collections" demonstrates a sub set of the nodes that support collections such as the Item Set Finder (Borgelt) node which searches in a collection column for frequently co-occuring elements.</met:element>
+  <met:element form="text" name="Last Uploaded" read-only="true">2016-08-19 10:36:37 +0000</met:element>
+  <met:element form="text" name="Last Edited" read-only="true">2016-03-22 18:00:06 +0100</met:element>
+</met:KNIMEMetaInfo>

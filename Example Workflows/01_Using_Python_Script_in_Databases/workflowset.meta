@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">Berthold</met:element>
+  <met:element form="date" name="Creation Date">8/11/2015/8:36:32 +01:00</met:element>
+  <met:element form="multiline" name="Comments">Working with databases with the Python Script (DB) node
+
+This workflow demonstrates the usage of the Python Script (DB) node that allows you to access data from a database directly within your Python script. Using this node you can alter the data within a database row by row without the need to load all the data at once.
+
+Notice, that the red connection ports of the database nodes only contain the SQL statement and connection information but not the data itself. The statement is processed within the database e.g. Oracle, MySQL, Postgres, DB2, SQL Server, Hive, Impala, etc. and the result is read into the KNIME Analytics Platform via the Database Connection Table Reader 
+
+URL: How to Setup the Python Extension https://www.knime.org/blog/how-to-setup-the-python-extension</met:element>
+  <met:element form="text" name="Last Uploaded" read-only="true">2017-07-17 13:57:59 +0200</met:element>
+  <met:element form="text" name="Last Edited" read-only="true">2016-03-22 18:24:46 +0100</met:element>
+</met:KNIMEMetaInfo>

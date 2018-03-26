@@ -1,0 +1,5 @@
+jdbc:sqlite:C:\Users\Slim_Shah\AppData\Local\Temp\knime_01_Using_Python7913\knime_tc_prgsx2xb4bia\db.sqlite
+<protocol>://<host>:<port>/<database_name>
+jdbc:sqlite:C:\temp\datasets.sqlite
+jdbc:sqlite://<host>:<port>/<database_name>
+jdbc:sqlite:C:\Users\Slim_Shah\AppData\Local\Temp\knime_01_Using_Python47453\knime_tc_nz8gyzrtecya\db.sqlite

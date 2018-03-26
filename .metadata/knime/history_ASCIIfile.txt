@@ -1,0 +1,4 @@
+knime://knime.workflow/data.all
+knime://knime.workflow/data/data.all
+knime://LOCAL/Example%20Workflows/TheData/Basics/adult.csv
+knime://knime.workflow/data/iris.data

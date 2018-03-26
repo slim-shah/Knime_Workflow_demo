@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">rosy</met:element>
+  <met:element form="date" name="Creation Date">31/0/2017/17:56:49 +01:00</met:element>
+  <met:element form="multiline" name="Comments">More GroupBy Examples
+
+On  adult.csv data set: on each one of the 4 groups defined by sex and income values, calculate total number of rows and average age and write results to a CSV file; on each one of the 4 groups defined by sex and income values, calculate the average of all numerical columns; on full input table count:  a. rows with missing values in column occupation;  b. all rows in column occupation;   c. rows with no missing value in column occupation;   d. all rows in another column (i.e. marital-status). Notice that this number should be the same as the number in 2.
+
+TAG: aggregation, groupby, ETL, CSV Writer, CSV, file writer, IO</met:element>
+  <met:element form="text" name="Last Uploaded" read-only="true">2017-07-17 11:34:57 +0200</met:element>
+  <met:element form="text" name="Last Edited" read-only="true">2017-02-10 11:49:15 +0100</met:element>
+</met:KNIMEMetaInfo>

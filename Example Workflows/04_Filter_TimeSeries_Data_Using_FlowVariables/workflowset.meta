@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">iris.adae</met:element>
+  <met:element form="date" name="Creation Date">19/8/2017/17:48:52 +02:00</met:element>
+  <met:element form="multiline" name="Comments">Filter timeseries data using flow variables
+
+This workflow demonstrates the usage of flow variables in the date and time nodes. Here the use case is to filter the last full week of data. Hence if you execute the workflow on wednesday you still only want to get the data until the last saturday.
+
+We achieve this by first finding the last Sunday. This will be the enddate in our filter node. 
+Afterwards we use the information as a flow variable in the Date&amp;Time-based Row Filter node. In addition we set the end of the filter to one week before the start date.</met:element>
+  <met:element form="text" name="Last Uploaded" read-only="true">2017-10-11 19:47:47 +0200</met:element>
+  <met:element form="text" name="Last Edited" read-only="true">2017-10-11 19:47:26 +0200</met:element>
+</met:KNIMEMetaInfo>

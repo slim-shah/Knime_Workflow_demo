@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<met:KNIMEMetaInfo xmlns:met="http://www.knime.org/2.9/metainfo">
+  <met:element form="text" name="Author">koetter</met:element>
+  <met:element form="date" name="Creation Date">18/10/2014/17:29:17 +01:00</met:element>
+  <met:element form="multiline" name="Comments">Working With Collections - Collection Types
+
+The goal of the workflow is to demonstrate the creation and working with collection cells. It is divided into three parts.
+The "Collection types" section describes the two different collection types that are supported by KNIME namely
+- Lists: list all elements including duplicates in the order they were added to the collection.
+- Sets: list the elements in an arbitrary order but contain each element only once.</met:element>
+  <met:element form="text" name="Last Uploaded" read-only="true">2016-08-19 10:36:37 +0000</met:element>
+  <met:element form="text" name="Last Edited" read-only="true">2016-03-22 18:00:55 +0100</met:element>
+</met:KNIMEMetaInfo>

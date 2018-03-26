@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config xmlns="http://www.knime.org/2008/09/XMLConfig" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.knime.org/2008/09/XMLConfig http://www.knime.org/XMLConfig_2008_09.xsd" key="settings.xml">
+<entry key="node_file" type="xstring" value="settings.xml"/>
+<config key="flow_stack"/>
+<config key="internal_node_subsettings">
+<entry key="memory_policy" type="xstring" value="CacheSmallInMemory"/>
+</config>
+<config key="model">
+<entry key="sourceCode" type="xstring" value="# To list all functions of the db_util object %%00010#db_util.print_description()%%00010db_util._set_debug(False)%%00010#db_util.set_quote_character('&quot;')%%00010print &quot;******************************************************************\n\t\tREADING\n******************************************************************&quot;%%00010print &quot;Dataframe&quot;%%00010df = db_util.get_dataframe()%%00010print df%%00010%%00010print &quot;Fetch one&quot;%%00010reader = db_util.get_db_reader();%%00010row = reader.fetchone()%%00010while row:%%00010%%00009print row%%00010%%00009row = reader.fetchone()%%00010%%00010print &quot;Fetch many&quot;%%00010reader = db_util.get_db_reader();%%00010rows = reader.fetchmany(10)%%00010print rows%%00010%%00010print &quot;Fetch all&quot;%%00010reader = db_util.get_db_reader();%%00010row = reader.fetchall()%%00010print rows%%00010%%00010%%00010%%00010print &quot;******************************************************************\n\t\tWRITING\n******************************************************************&quot;%%00010def rowCount(tableName):%%00010%%00009cursor = db_util.get_cursor()%%00010%%00009cursor.execute('select count(*) from ' + db_util._quote_identifier(tableName))%%00010%%00009result = cursor.fetchone()%%00010%%00009return result[0]%%00010%%00010def randomTableName():%%00010%%00009return &quot;a&quot; + ''.join(random.choice(string.ascii_lowercase + string.digits) for _ in range(15))%%00010%%00010df = db_util.get_dataframe()%%00010import random%%00010import string%%00010table_name = randomTableName()%%00010%%00010print &quot;Table does not exist (df)&quot;%%00010db_util.write_dataframe(table_name, df)%%00010print rowCount(table_name)%%00010%%00010print &quot;Table exists (df)[append]&quot;%%00010db_util.write_dataframe(table_name, df)%%00010print rowCount(table_name)%%00010%%00010print &quot;Table exists (df)[drop]&quot;%%00010db_util.write_dataframe(table_name, df, True)%%00010print rowCount(table_name)%%00010%%00010table_name = randomTableName()%%00010%%00010print &quot;Table does not exist (writer)&quot;%%00010writer = db_util.get_db_writer(table_name,df)%%00010for row in df.to_dict(&quot;records&quot;):%%00010%%00009writer.write_row(row)%%00010print rowCount(table_name)%%00010%%00010print &quot;Table exists (writer)[append]&quot;%%00010writer = db_util.get_db_writer(table_name,df)%%00010for row in df.to_dict(&quot;records&quot;):%%00010%%00009writer.write_row(row)%%00010print rowCount(table_name)%%00010%%00010print &quot;Table exists (writer)[drop]&quot;%%00010writer = db_util.get_db_writer(table_name,df, True)%%00010for row in df.to_dict(&quot;records&quot;):%%00010%%00009writer.write_row(row)%%00010print rowCount(table_name)%%00010%%00010print &quot;Only values in row&quot;%%00010writer = db_util.get_db_writer(table_name,df)%%00010for row in df.to_dict(&quot;records&quot;):%%00010%%00009writer.write_row(row)%%00010print rowCount(table_name)"/>
+<entry key="rowLimit" type="xint" value="1000"/>
+</config>
+<config key="nodeAnnotation">
+<entry key="text" type="xstring" value="This node demonstrates the usage of the different methods%%00013%%00010that you can use to access data within a database.%%00013%%00010Simply open the configuration dialog via the context menu%%00013%%00010and click on the Execute script button."/>
+<entry key="bgcolor" type="xint" value="16777215"/>
+<entry key="x-coordinate" type="xint" value="115"/>
+<entry key="y-coordinate" type="xint" value="499"/>
+<entry key="width" type="xint" value="330"/>
+<entry key="height" type="xint" value="60"/>
+<entry key="alignment" type="xstring" value="CENTER"/>
+<entry key="borderSize" type="xint" value="0"/>
+<entry key="borderColor" type="xint" value="16777215"/>
+<entry key="defFontSize" type="xint" value="9"/>
+<entry key="annotation-version" type="xint" value="20151123"/>
+<config key="styles"/>
+</config>
+<entry key="customDescription" type="xstring" isnull="true" value=""/>
+<entry key="state" type="xstring" value="IDLE"/>
+<entry key="factory" type="xstring" value="org.knime.python.nodes.db.PythonScriptDBNodeFactory"/>
+<entry key="node-name" type="xstring" value="Python Script (DB)"/>
+<entry key="node-bundle-name" type="xstring" value="KNIME Python nodes"/>
+<entry key="node-bundle-symbolic-name" type="xstring" value="org.knime.python.nodes"/>
+<entry key="node-bundle-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-bundle-version" type="xstring" value="3.1.0.v201510191254"/>
+<entry key="node-feature-name" type="xstring" value="KNIME Python Integration"/>
+<entry key="node-feature-symbolic-name" type="xstring" value="org.knime.features.python.feature.group"/>
+<entry key="node-feature-vendor" type="xstring" value="KNIME GmbH, Konstanz, Germany"/>
+<entry key="node-feature-version" type="xstring" value="3.1.0.v201511250958"/>
+<config key="factory_settings"/>
+<entry key="name" type="xstring" value="Python Script (DB)"/>
+<entry key="hasContent" type="xboolean" value="false"/>
+<entry key="isInactive" type="xboolean" value="false"/>
+<config key="ports">
+<config key="port_1">
+<entry key="index" type="xint" value="1"/>
+<entry key="port_dir_location" type="xstring" isnull="true" value=""/>
+</config>
+</config>
+<config key="filestores">
+<entry key="file_store_location" type="xstring" isnull="true" value=""/>
+<entry key="file_store_id" type="xstring" isnull="true" value=""/>
+</config>
+</config>
